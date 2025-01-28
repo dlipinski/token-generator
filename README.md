@@ -1,4 +1,8 @@
-VIDEO: https://github.com/dlipinski/token-generator/issues/1
+
+
+
+https://github.com/user-attachments/assets/bc442deb-0bc3-498f-bc2a-c4a8afdd2888
+
 
 -----------
 
