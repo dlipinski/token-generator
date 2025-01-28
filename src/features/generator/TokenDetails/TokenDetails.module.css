@@ -1,0 +1,14 @@
+.TokenDetails {
+  padding: 1rem;
+  border-radius: 4px;
+  background: #fff;
+
+}
+
+.CommonUsed {
+  border-radius: 4px;
+  background: #f9fafc;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+  gap: 0.1rem;
+}

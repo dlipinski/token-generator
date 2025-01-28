@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.payment,
+.token-summary,
+.token-features,
+.token-additions,
+.token-details {
+  transition: 0.74s;
+  box-shadow: 0 0 35px rgb(3 33 122 / 25%);
+}
+.token-details {
+  z-index: 3;
+  transform: translate(44rem, 6rem) rotateX(30deg) rotatey(30deg) rotateZ(1deg)
+    scale(0.9);
+  animation: token-details 4s linear infinite;
+}
+.token-features,
+.token-additions {
+  z-index: 2;
+  transform: translate(23rem, 2rem) rotateX(30deg) rotatey(30deg) rotateZ(1deg)
+    scale(0.9);
+  animation: animate-features-additions 4s linear infinite;
+  animation-delay: 0.5s;
+}
+
+.token-summary,
+.payment {
+  z-index: 1;
+  transform: translate(2rem, -1rem) rotateX(30deg) rotatey(30deg) rotateZ(1deg)
+    scale(0.9);
+  animation: animate-summary-payment 4s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes token-details {
+  0% {
+    transform: translate(44rem, 6rem) rotateX(30deg) rotatey(30deg)
+      rotateZ(1deg) scale(0.9);
+  }
+  50% {
+    transform: translate(44rem, 5.5rem) rotateX(30deg) rotatey(30deg)
+      rotateZ(1deg) scale(0.9);
+  }
+  100% {
+    transform: translate(44rem, 6rem) rotateX(30deg) rotatey(30deg)
+      rotateZ(1deg) scale(0.9);
+  }
+}
+
+@keyframes animate-features-additions {
+  0% {
+    transform: translate(23rem, 2rem) rotateX(30deg) rotatey(30deg)
+      rotateZ(1deg) scale(0.9);
+  }
+  50% {
+    transform: translate(23rem, 1.5rem) rotateX(30deg) rotatey(30deg)
+      rotateZ(1deg) scale(0.9);
+  }
+  100% {
+    transform: translate(23rem, 2rem) rotateX(30deg) rotatey(30deg)
+      rotateZ(1deg) scale(0.9);
+  }
+}
+
+@keyframes animate-summary-payment {
+  0% {
+    transform: translate(2rem, -1rem) rotateX(30deg) rotatey(30deg)
+      rotateZ(1deg) scale(0.9);
+  }
+  50% {
+    transform: translate(2rem, -1.5rem) rotateX(30deg) rotatey(30deg)
+      rotateZ(1deg) scale(0.9);
+  }
+  100% {
+    transform: translate(2rem, -1rem) rotateX(30deg) rotatey(30deg)
+      rotateZ(1deg) scale(0.9);
+  }
+}
+
+.active .payment,
+.active .token-summary,
+.active .token-features,
+.active .token-additions,
+.active .token-details {
+  animation: none;
+  box-shadow: 0 0 15px rgb(3 33 122 / 10%);
+  animation: remove-animation 0.5s forwards !important;
+}
+
+@keyframes remove-animation {
+  100% {
+    transform: translate(6rem, -1rem);
+    opacity: 1;
+  }
+}
+
+.blue-rect {
+  position: absolute;
+  right: -7%;
+  top: -120%;
+  bottom: 150%;
+  width: 60%;
+  height: 200%;
+  border-radius: 0%;
+  overflow: HIDDEN;
+  z-index: 0;
+  transform: rotate(-40deg);
+  gap: 1rem;
+  background: linear-gradient(#2952cc, #85a3ff);
+  /*linear-gradient(#e66465, #9198e5);*/
+
+  border-radius: 7rem;
+}
+
+.blue-rect div {
+  border-radius: 1rem;
+  background: #3366ff;
+}
+
+.blue-rect div:nth-child(1) {
+  background: #2952cc;
+}
+
+.blue-rect div:nth-child(2) {
+  background: #3366ff;
+}
+
+.blue-rect div:nth-child(3) {
+  background: #5c85ff;
+}
+
+.css-1ipoqbj.ub-box-szg_border-box {
+  stroke-width: 8 !important;
+  stroke: #3366ff !important;
+}

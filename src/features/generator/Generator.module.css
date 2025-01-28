@@ -1,0 +1,25 @@
+.Container {
+  width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 4rem;
+}
+
+.Generator {
+  width: 1200px;
+  z-index: 0;
+  gap: 1rem;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 1200px) {
+  .Generator {
+    grid-template-columns: 1fr;
+    width: unset;
+    height: 100vh;
+    overflow: scroll;
+    padding: 1rem;
+  }
+}

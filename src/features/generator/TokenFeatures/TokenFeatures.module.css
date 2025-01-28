@@ -1,0 +1,67 @@
+.TokenFeatures {
+  border: 1px solid #e6e8f0;
+  padding: 1rem;
+  border-radius: 4px;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.Feature {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fafbff;
+  border-radius: 4px;
+  padding: 0.25rem 1rem;
+  cursor: pointer;
+  gap: 0.5rem;
+  user-select: none;
+  transition: 0.05s;
+}
+
+.Feature.Checked {
+  background: #f3f6ff;
+}
+
+.Feature:not(.Checked):hover {
+  background: #f3f6ff;
+}
+
+.Left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.Price {
+  display: flex;
+  font-size: 0.8rem;
+  font-weight: 500;
+  gap: 0.25rem;
+}
+
+.Free {
+  font-weight: 700;
+  color: #3366ff;
+}
+
+.PriceValue {
+  text-decoration: line-through;
+  color: #c1c4d6;
+}
+
+.Middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Middle.Unchecked {
+  color: #c1c4d6 !important;
+}
+
+.Icon {
+  font-size: 3rem;
+}

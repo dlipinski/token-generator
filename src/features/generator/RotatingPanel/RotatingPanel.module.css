@@ -1,0 +1,32 @@
+.Card {
+  position: relative;
+  background: rgba(0, 0, 0, 0.3);
+  filter: blur(1px);
+}
+
+.Front,
+.Back {
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  backface-visibility: hidden;
+  position: absolute;
+  transition: transform 0.6s linear;
+  transform-origin: 6rem 6rem;
+}
+
+.Front {
+  transform: rotateX(0deg);
+}
+
+.Back {
+  transform: rotateX(-180deg);
+}
+.Card.Rotated > .Front {
+  transform: rotateX(180deg);
+}
+
+.Card.Card.Rotated > .Back {
+  transform: rotateX(0deg);
+}
